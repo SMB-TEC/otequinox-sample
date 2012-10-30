@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %name
+Bundle-SymbolicName: net.bluwings.eclipse.pde.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: %provider-name
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Localization: plugin
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.pde.ui;bundle-version="3.7.1",
+ org.eclipse.jface;bundle-version="3.8.0",
+ org.eclipse.objectteams.otequinox;bundle-version="2.1.0",
+ org.eclipse.core.runtime;bundle-version="3.8.0",
+ org.eclipse.ui.workbench;bundle-version="3.103.1"
