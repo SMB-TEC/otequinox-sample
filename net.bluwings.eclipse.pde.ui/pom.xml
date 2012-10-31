@@ -3,34 +3,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.eclipse</groupId>
-		<artifactId>objectteams-parent-pom</artifactId>
-		<version>2.1.1</version>
+		<groupId>net.bluwings.eclipse</groupId>
+		<artifactId>net.bluwings.eclipse.pde.ui.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<groupId>net.bluwings.eclipse</groupId>
 	<artifactId>net.bluwings.eclipse.pde.ui</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 	<name>Eclipse PDE UI Customization</name>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
-	<repositories>
-		<repository>
-			<id>ObjectTeamsRepository</id>
-			<name>Object Teams Repository</name>
-			<url>http://download.eclipse.org/objectteams/maven/3/repository</url>
-		</repository>
-		<repository>
-			<id>juno</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/juno</url>
-		</repository>
-	</repositories>
-
 
 	<build>
 		<pluginManagement>
@@ -62,25 +43,6 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-
-		<sourceDirectory>src</sourceDirectory>
-		<outputDirectory>bin</outputDirectory>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<extensions>true</extensions>
-			</plugin>
-		</plugins>
 	</build>
 
 </project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.bluwings.eclipse.pde.ui.feature"
+      label="%name"
+      version="1.0.0.qualifier"
+      provider-name="%provider-name">
+
+   <description url="https://github.com/BluWings/otequinox-sample.git">
+      This sample project demonstrates some of the features of the OT/Equinox project.
+   </description>
+
+   <copyright>
+      Copyright (c) 2012 SMB GmbH, Dresden - Germany. All rights reserved.
+   </copyright>
+
+   <license url="">
+      This program and the accompanying materials are made available under the terms of the Eclipse Public Licence v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
+   </license>
+
+   <url>
+      <discovery label="Eclipse Juno Release" url="http://download.eclipse.org/releases/juno"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.pde.ui" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface" version="3.8.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.objectteams.otequinox" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.8.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.workbench" version="3.103.1" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="net.bluwings.eclipse.pde.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
