@@ -2,6 +2,24 @@ This sample project demonstrates some of the features of the OT/Equinox project.
 
 [![Build Status](https://secure.travis-ci.org/BluWings/otequinox-sample.png)](http://travis-ci.org/BluWings/otequinox-sample)
 
+## About
+
+This sample project utilizes [Eclipse Object Teams](http://www.eclipse.org/objectteams) to
+add some extra features to your Eclipse installation. OT/Equinox will be used to pimp the
+existing MANIFEST.MF editor - which is part of the Eclipse PDE - in a pragmatic and easy
+manner.
+
+* Does it distract you to have preset the version / build qualifier of added Plug-In
+dependencies automatically by Eclipse?
+* Do you remove the version / build qualifier again and again to gain more flexibility
+while programming?
+
+The sample project adds a Button labeled "Remove versions" to the Dependencies Page of
+the MANIFEST.MF editor. It implements several [Teams](http://www.objectteams.org/def/1.3/s1.html)
+and [Roles](http://www.objectteams.org/def/1.3/s1.html) to achieve its purpose. When
+clicking the "Remove versions" button the version / build qualifier of all added
+depended plug-ins will be removed.
+
 ## LICENSE
 
 [Eclipse Public License - v 1.0](http://www.eclipse.org/legal/epl-v10.html)
