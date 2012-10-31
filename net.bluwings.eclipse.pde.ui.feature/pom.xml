@@ -10,6 +10,6 @@
 
 	<artifactId>net.bluwings.eclipse.pde.ui.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
-    <name>Eclipse PDE UI Customization Feature</name>
+	<name>Eclipse PDE UI Customization Feature</name>
 
 </project>
