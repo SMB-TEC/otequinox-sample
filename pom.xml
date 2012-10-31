@@ -61,6 +61,7 @@
     <modules>
         <module>net.bluwings.eclipse.pde.ui</module>
         <module>net.bluwings.eclipse.pde.ui.feature</module>
+        <module>net.bluwings.eclipse.pde.ui.repository</module>
     </modules>
         
 </project>
