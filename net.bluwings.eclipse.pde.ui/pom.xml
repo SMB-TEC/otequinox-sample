@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.eclipse</groupId>
+		<artifactId>objectteams-parent-pom</artifactId>
+		<version>2.1.1</version>
+	</parent>
+
+	<groupId>net.bluwings.eclipse</groupId>
+	<artifactId>net.bluwings.eclipse.pde.ui</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-plugin</packaging>
+	<name>Eclipse PDE UI Customization</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>ObjectTeamsRepository</id>
+			<name>Object Teams Repository</name>
+			<url>http://download.eclipse.org/objectteams/maven/3/repository</url>
+		</repository>
+		<repository>
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/juno</url>
+		</repository>
+	</repositories>
+
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-compiler-plugin</artifactId>
+					<extensions>true</extensions>
+					<dependencies>
+						<dependency>
+							<groupId>org.eclipse.tycho</groupId>
+							<artifactId>tycho-compiler-jdt</artifactId>
+							<version>${tycho.version}</version>
+							<exclusions>
+								<!-- Exclude the original JDT/Core to be replaced by the OT/J variant: -->
+								<exclusion>
+									<groupId>org.eclipse.tycho</groupId>
+									<artifactId>org.eclipse.jdt.core</artifactId>
+								</exclusion>
+							</exclusions>
+						</dependency>
+						<dependency>
+							<!-- plug the OT/J compiler into the tycho-compiler-jdt plug-in: -->
+							<groupId>org.eclipse</groupId>
+							<artifactId>objectteams-otj-compiler</artifactId>
+							<version>${otj.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<sourceDirectory>src</sourceDirectory>
+		<outputDirectory>bin</outputDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
