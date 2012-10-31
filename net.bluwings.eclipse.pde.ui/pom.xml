@@ -8,7 +8,6 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>net.bluwings.eclipse</groupId>
 	<artifactId>net.bluwings.eclipse.pde.ui</artifactId>
 	<packaging>eclipse-plugin</packaging>
 	<name>Eclipse PDE UI Customization</name>
