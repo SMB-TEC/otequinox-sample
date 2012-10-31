@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/net.bluwings.eclipse.pde.ui.feature_1.0.0.qualifier.jar" id="net.bluwings.eclipse.pde.ui.feature" version="1.0.0.qualifier">
+      <category name="net.bluwings.eclipse.pde.ui.category"/>
+   </feature>
+   <category-def name="net.bluwings.eclipse.pde.ui.category" label="OT/Equinox Samples"/>
+</site>

@@ -10,7 +10,7 @@
 
 	<artifactId>net.bluwings.eclipse.pde.ui</artifactId>
 	<packaging>eclipse-plugin</packaging>
-	<name>Eclipse PDE UI Customization</name>
+	<name>Eclipse PDE UI Customization Plugin</name>
 
 	<build>
 		<pluginManagement>
