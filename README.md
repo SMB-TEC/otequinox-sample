@@ -1,6 +1,6 @@
 This sample project demonstrates some of the features of the OT/Equinox project.
 
-![screenshot](https://github.com/BluWings/otequinox-sample/master/screenshots/screenshot.png)
+![screenshot](https://raw.github.com/BluWings/otequinox-sample/master/screenshots/screenshot.png)
 
 ## Continuous Build
 
