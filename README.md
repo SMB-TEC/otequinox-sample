@@ -1,5 +1,9 @@
 This sample project demonstrates some of the features of the OT/Equinox project.
 
+![screenshot](https://github.com/BluWings/otequinox-sample/master/screenshots/screenshot.png)
+
+## Continuous Build
+
 [![Build Status](https://secure.travis-ci.org/BluWings/otequinox-sample.png)](http://travis-ci.org/BluWings/otequinox-sample)
 
 ## About
@@ -14,7 +18,7 @@ dependencies automatically by Eclipse?
 * Do you remove the version / build qualifier of required Plug-ins again and again to gain
 more flexibility while programming?
 
-The sample project adds a Button labeled "Remove versions" to the Dependencies Page of
+The sample project adds a Button labeled "Remove versions" to the "Dependencies" Tab of
 the MANIFEST.MF editor. It implements several [Teams](http://www.objectteams.org/def/1.3/s1.html)
 and [Roles](http://www.objectteams.org/def/1.3/s1.html) to achieve its purpose. When
 clicking the "Remove versions" button the version / build qualifier of all added
