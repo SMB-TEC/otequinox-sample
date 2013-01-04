@@ -26,6 +26,10 @@ required Plug-Ins will be removed.
 
 This project was started during the "2. Eclipse Plug-In Fest" (10/13/2012) in Dresden.
 
+## SEE ALSO
+
+* http://www.smb-tec.com/2012/11/01/my-first-encounter-with-eclipse-objectteams-otj-and-otequinox
+
 ## LICENSE
 
 [Eclipse Public License - v 1.0](http://www.eclipse.org/legal/epl-v10.html)
